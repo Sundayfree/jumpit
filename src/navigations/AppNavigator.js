@@ -21,9 +21,9 @@ import SettingPage from '../screens/SettingPage';
 import LogoutPage from '../screens/LogoutPage';
 import DrawerItemsComponent from '../components/DrawerItemsComponent';
 import SignInPage from '../screens/SignInPage';
-import SignUpPage1 from '../screens/SignUpPage1';
-import SignUpPage2 from '../screens/SingUpPage2';
-import SignUpPage3 from '../screens/SignUpPage3';
+import SingUpPage1 from '../screens/SingUpPage1';
+import SignUpPage from '../screens/SignUpPage';
+import SignUpPage2 from '../screens/SignUpPage2';
 
 const BottomTabNavigator = createBottomTabNavigator(
   {
@@ -173,20 +173,20 @@ const UserNavigator = createStackNavigator(
         header: null
       })
     },
+    SignUp: {
+      screen: SignUpPage,
+      navigationOptions: ({ navigation }) => ({
+        title: 'New User'
+      })
+    },
     SignUp1: {
-      screen: SignUpPage1,
+      screen: SingUpPage1,
       navigationOptions: ({ navigation }) => ({
         title: 'New User'
       })
     },
     SignUp2: {
       screen: SignUpPage2,
-      navigationOptions: ({ navigation }) => ({
-        title: 'New User'
-      })
-    },
-    SignUp3: {
-      screen: SignUpPage3,
       navigationOptions: ({ navigation }) => ({
         title: 'New User'
       })

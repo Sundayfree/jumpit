@@ -7,14 +7,12 @@ export default (HeaderComponent = props => {
   return (
     <Header style={{ backgroundColor: '#f5a742' }}>
       <Left>
-        <Button transparent dark onPress={() => navigation.navigate('Home')}>
-          <Ionicons
-            style={{ paddingLeft: 10 }}
-            onPress={() => navigation.openDrawer()}
-            name="md-menu"
-            size={30}
-          />
-        </Button>
+        <Ionicons
+          style={{ paddingLeft: 10 }}
+          onPress={() => navigation.openDrawer()}
+          name="md-menu"
+          size={30}
+        />
       </Left>
       <Body>
         <Title>{props.titleName}</Title>
